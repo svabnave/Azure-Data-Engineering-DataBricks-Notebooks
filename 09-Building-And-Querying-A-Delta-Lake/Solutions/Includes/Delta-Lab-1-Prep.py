@@ -1,18 +1,6 @@
 # Databricks notebook source
+# MAGIC 
 # MAGIC %run "./Classroom-Setup"
-
-# COMMAND ----------
-
-# Mount "/mnt/training" again using "%run "./Includes/Dataset-Mounts-New"" if it is failed in "./Includes/Classroom-Setup"
-try:
-    files = dbutils.fs.ls("/mnt/training")
-except:
-    dbutils.fs.unmount('/mnt/training/')
-
-
-# COMMAND ----------
-
-# MAGIC %run "./Dataset-Mounts-New"
 
 # COMMAND ----------
 
